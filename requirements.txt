@@ -18,3 +18,8 @@ openpyxl
 beautifulsoup4
 pyarrow
 litellm
+chromadb>=0.5.5
+pypdf>=4.2.0
+python-dotenv>=1.0.1
+langchain-text-splitters~=0.2.2
+sentence-transformers>=2.5.1

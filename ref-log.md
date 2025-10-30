@@ -1,0 +1,11 @@
+- Libraries/Tools:
+  - streamlit, langchain, langchain-community, langchain-openai
+  - chromadb, pypdf, python-dotenv
+- Models (configurable via env or sidebar):
+  - Chat: ${OPENAI_MODEL:-openai.gpt-4o}
+  - Embeddings: ${OPENAI_EMBEDDINGS:-local:sentence-transformers/all-MiniLM-L6-v2}
+- Rationale:
+  - Persistent local Chroma for retrieval.
+  - Recursive chunking (size=1000, overlap=200)
+  - Grounded answers with explicit citations [1], [2]
+- OpenAI Usage: Debugging, troubleshooting dependency issues, correcting model name mismatches, and verifying configuration consistency
